@@ -1,0 +1,27 @@
+# Core app
+streamlit>=1.32
+pandas>=2.0
+numpy>=1.24
+
+# PDF text extraction
+pdfplumber>=0.10
+
+# Sentence segmentation (recommended; a regex fallback is used if missing)
+pysbd>=0.3.4
+
+# BERT sentiment classification
+transformers>=4.38
+torch>=2.1          # CPU build is fine; see README for GPU install notes
+
+# Word cloud tab (optional but recommended)
+wordcloud>=1.9
+matplotlib>=3.7
+
+# --- Optional OCR fallback for scanned PDFs ---
+# Also requires the Tesseract OCR and Poppler system binaries installed
+# separately (see README "OCR for scanned reports").
+# pytesseract>=0.3.10
+# pdf2image>=1.17
+
+# --- Dev / testing ---
+pytest>=7.4
